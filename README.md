@@ -29,6 +29,30 @@ whistle inspect path\to\match.mp4 --output outputs\match
 pytest
 ```
 
+## Documentation
+
+- [Documentation index](docs/README.md)
+- [Architecture](docs/architecture.md)
+- [Training](docs/training.md)
+- [Inference](docs/inference.md)
+- [Data and provenance](docs/data.md)
+- [Licensing](docs/licensing.md)
+- [Model card](docs/model-card.md)
+- [Release process](docs/release.md)
+
+## Repository layout
+
+```text
+configs/       Versioned experiment configurations
+docs/          Technical documentation and provenance
+examples/      Reproducible usage examples
+media/         Official project media
+scripts/       Operational and release helpers
+tests/         Automated tests
+tools/         Dataset conversion and download tooling
+whistle/       Python package and public CLI
+```
+
 ## Product stages
 
 Core, Pitch, Ball, basic Events, and Analytics. Speed and distance are withheld when camera calibration fails or confidence is too low.

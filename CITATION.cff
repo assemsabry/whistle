@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Whistle
+message: "If Whistle helps your work, please cite this project."
+type: software
+authors:
+  - family-names: Sabry
+    given-names: Assem
+    website: https://assem.one/
+repository-code: https://github.com/assemsabry/whistle
+url: https://huggingface.co/assemsabry/whistle
+license: MIT
+version: 0.0.1
+date-released: 2026-09-15
