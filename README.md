@@ -6,6 +6,8 @@
 
 Whistle converts football match video into inspectable temporal data: detections, tracks, JSON/CSV files, and annotated video. It does not identify player names, positions, or jersey numbers, and it has no player-rating task.
 
+The GitHub repository is the complete source repository for Whistle. The companion [Hugging Face repository](https://huggingface.co/assemsabry/whistle) is reserved for released model weights and their minimal model card only.
+
 ## Current status
 
 Version `0.0.1` provides:
@@ -15,7 +17,7 @@ Version `0.0.1` provides:
 - A CLI that accepts MP4 and writes a reproducible JSON manifest.
 - Replaceable detector and tracker interfaces without coupling to one library.
 
-No match videos or checkpoints are distributed with this repository. Dataset provenance and licensing must be recorded before adding any data or weights.
+No match videos or checkpoints are distributed with this repository. Dataset provenance and licensing must be recorded before adding any data or weights. Released weights are published separately in the Hugging Face repository.
 
 ## Usage
 
