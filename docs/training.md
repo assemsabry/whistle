@@ -8,9 +8,10 @@ Training is reproducible from the scripts and configurations in this repository.
 2. Verify checksums and upstream license terms.
 3. Convert annotations with the tools in `tools/`.
 4. Train the detector and save checkpoints outside the repository.
-5. Validate on a held-out split.
-6. Train and validate tracking, pitch, ball, and event components.
-7. Run the end-to-end quality gates before release.
+5. Convert SoccerNet GSR pitch-line annotations with `tools/convert_gsr_pitch_pose.py`.
+6. Train and validate pitch calibration on a held-out split.
+7. Evaluate anonymous tracking, ball state, and basic event components.
+8. Run the end-to-end quality gates before release.
 
 ## Reproducibility requirements
 
