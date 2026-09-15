@@ -33,4 +33,4 @@ Core, Pitch, Ball, basic Events, and Analytics. Speed and distance are withheld 
 
 ## License
 
-Original code is Apache-2.0. Dataset and model-weight licenses are separate and must be reviewed; match videos or derivatives must not be redistributed without permission.
+The intended license for original Whistle code is MIT, subject to the dependency and dataset audit in [Licensing and Data Provenance](docs/licensing.md). Dataset and model-weight licenses remain separate; match videos or derivatives must not be redistributed without permission.
