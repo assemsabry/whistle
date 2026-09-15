@@ -1,0 +1,9 @@
+# Ultralytics dataset config. Replace paths only after licensing/provenance review.
+path: /mnt/opet-data/whistle/datasets/detection
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: player
+  1: referee
+  2: football
