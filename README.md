@@ -1,36 +1,23 @@
----
-license: apache-2.0
-language:
-- en
-tags:
-- computer-vision
-- football
-- object-detection
-- multi-object-tracking
-author: Assem Sabry
-pretty_name: Whistle
----
-
 # Whistle
 
 ![Whistle official poster](media/whistle-poster.png)
 
 **Whistle** is developed and owned by [Assem Sabry](https://assem.one/).
 
-Whistle يحوّل فيديو مباراة كرة القدم إلى بيانات زمنية قابلة للفحص: detections وtracks وملفات JSON/CSV وفيديو مرئي. لا يحدد أسماء اللاعبين أو مراكزهم أو أرقام قمصانهم، ولا يحتوي على مهمة تقييم للاعبين.
+Whistle converts football match video into inspectable temporal data: detections, tracks, JSON/CSV files, and annotated video. It does not identify player names, positions, or jersey numbers, and it has no player-rating task.
 
-## الحالة الحالية
+## Current status
 
-الإصدار `0.0.1` يوفّر:
+Version `0.0.1` provides:
 
-- قراءة manifest للفيديو والتحقق من الملف.
-- schema ثابت للـ frames وdetections وtracks.
-- CLI يستقبل MP4 ويكتب manifest ونتيجة JSON أولية قابلة لإعادة التشغيل.
-- طبقة detector/tracker قابلة للاستبدال دون ربطها بمكتبة بعينها.
+- Video manifest reading and file validation.
+- Stable schemas for frames, detections, and tracks.
+- A CLI that accepts MP4 and writes a reproducible JSON manifest.
+- Replaceable detector and tracker interfaces without coupling to one library.
 
-لا توجد أوزان أو بيانات فيديو موزعة مع المستودع. يجب تسجيل provenance والترخيص قبل إضافة أي dataset أو checkpoint.
+No match videos or checkpoints are distributed with this repository. Dataset provenance and licensing must be recorded before adding any data or weights.
 
-## التشغيل
+## Usage
 
 ```powershell
 python -m venv .venv
@@ -40,10 +27,10 @@ whistle inspect path\to\match.mp4 --output outputs\match
 pytest
 ```
 
-## مراحل المنتج
+## Product stages
 
-Core ثم Pitch ثم Ball ثم Events الأساسية ثم Analytics. لن تظهر السرعة أو المسافة عند فشل معايرة الكاميرا أو انخفاض الثقة.
+Core, Pitch, Ball, basic Events, and Analytics. Speed and distance are withheld when camera calibration fails or confidence is too low.
 
-## الترخيص
+## License
 
-الكود الأصلي Apache-2.0. رخصة الأوزان والبيانات منفصلة وتُراجع قبل النشر؛ لا تُضمّن فيديوهات المباريات أو مشتقاتها دون حق إعادة التوزيع.
+Original code is Apache-2.0. Dataset and model-weight licenses are separate and must be reviewed; match videos or derivatives must not be redistributed without permission.
