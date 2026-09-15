@@ -1,3 +1,16 @@
+---
+license: apache-2.0
+language:
+- en
+tags:
+- computer-vision
+- football
+- object-detection
+- multi-object-tracking
+author: Assem Sabry
+pretty_name: Whistle
+---
+
 # Whistle
 
 ![Whistle official poster](media/whistle-poster.png)
